@@ -1,19 +1,21 @@
-# CRUDify Web App
+# CRUDify Web App (https://crud-b65f8.web.app/)
 
 CRUDify is a simple and intuitive web application that allows users to perform CRUD (Create, Read, Update, Delete) operations on a set of data. The frontend is built using Angular, providing a dynamic and responsive user interface, while the backend REST API is powered by PHP. Bootstrap is used for a clean and modern design.
 
 ### Features
 
 Create: Easily add new records to your dataset.<br>
-Read: View and search through existing records effortlessly.<br>
-Update: Modify and update records with a user-friendly interface.<br>
-Delete: Remove unwanted records seamlessly.
+Read: View existing records in tabular format with sorting and pagination features.<br>
+Update: Modify and update records.<br>
+Delete: Remove records.
 
 ### Technologies Used
 
 Frontend: Angular<br>
 Backend: PHP<br>
+Database: Mysql<br>
 Styling: Bootstrap5<br>
+Hosting: Firebase(angular), 000webhost(php)
 
 ### Getting Started
 
@@ -33,5 +35,3 @@ Follow these steps to get the CRUDify web app up and running locally:
 3. Start your PHP server.
 
 Visit `http://localhost:4200` in your browser to access CRUDify.<br>
-
-live link:- `https://crud-b65f8.web.app/`
