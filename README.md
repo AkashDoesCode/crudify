@@ -15,9 +15,7 @@ Delete: Remove unwanted records seamlessly.
 **Technologies Used**
 
 Frontend: Angular
-
 Backend: PHP
-
 Styling: Bootstrap5
 
 **Getting Started**
