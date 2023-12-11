@@ -4,18 +4,16 @@ CRUDify is a simple and intuitive web application that allows users to perform C
 
 ### Features
 
-Create: Easily add new records to your dataset.
-Read: View and search through existing records effortlessly.
-
-Update: Modify and update records with a user-friendly interface.
-
+Create: Easily add new records to your dataset.<br>
+Read: View and search through existing records effortlessly.<br>
+Update: Modify and update records with a user-friendly interface.<br>
 Delete: Remove unwanted records seamlessly.
 
 ### Technologies Used
 
-Frontend: Angular
-Backend: PHP
-Styling: Bootstrap5
+Frontend: Angular<br>
+Backend: PHP<br>
+Styling: Bootstrap5<br>
 
 ### Getting Started
 
@@ -23,7 +21,7 @@ Follow these steps to get the CRUDify web app up and running locally:
 
 #### For the frontend:
 
-1. Clone the repository: `git clone https://github.com/yourusername/crudify.git`
+1. Clone the repository: `git clone https://github.com/AkashDoesCode/crudify.git`
 2. Navigate to the frontend directory: `cd crudify/frontend`
 3. Install dependencies: `npm install`
 4. Start the Angular development server: `ng serve`
@@ -34,4 +32,6 @@ Follow these steps to get the CRUDify web app up and running locally:
 2. Configure your database settings in `config/Database.php`.
 3. Start your PHP server.
 
-Visit `http://localhost:4200` in your browser to access CRUDify.
+Visit `http://localhost:4200` in your browser to access CRUDify.<br>
+
+live link:- `https://crud-b65f8.web.app/`
