@@ -20,20 +20,20 @@ export class ApiService {
   }
 
   readUser(): Observable<any[]>{
-    return this.httpClient.get<any[]>(`${this.PHP_REST_API}/rest-api/api/read.php`);
+    return this.httpClient.get<any[]>(`${this.PHP_API_SERVER}/rest-api/api/read.php`);
   }
   
 
   createUser(user: any): Observable<any>{
-    return this.httpClient.post(`${this.PHP_REST_API}/rest-api/api/create.php`,user);
+    return this.httpClient.post(`${this.PHP_API_SERVER}/rest-api/api/create.php`,user);
   }
 
   deleteUser(id: any): Observable<any>{
-    return this.httpClient.get(`${this.PHP_REST_API}/rest-api/api/delete.php?id=`+id);
+    return this.httpClient.delete(`${this.PHP_API_SERVER}/rest-api/api/delete.php?id=`+id);
   }
 
   updateUser(user:any):Observable<any>{
-    return this.httpClient.post(`${this.PHP_REST_API}/rest-api/api/update.php`,user);
+    return this.httpClient.put(`${this.PHP_API_SERVER}/rest-api/api/update.php`,user);
   }
 
   saveData(user:any){
