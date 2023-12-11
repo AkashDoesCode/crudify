@@ -1,4 +1,5 @@
 **CRUDify Web App**
+
 CRUDify is a simple and intuitive web application that allows users to perform CRUD (Create, Read, Update, Delete) operations on a set of data. The frontend is built using Angular, providing a dynamic and responsive user interface, while the backend REST API is powered by PHP. Bootstrap is used for a clean and modern design.
 
 **Features**
