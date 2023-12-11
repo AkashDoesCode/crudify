@@ -1,0 +1,144 @@
+.container
+{
+    width: 70%;
+    height: 65vh;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+table
+{
+    margin: 10px 0px;
+    border-collapse: collapse;
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+}
+
+th{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(238, 197, 238);
+}
+
+
+table thead tr th{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px;
+    vertical-align: top;
+    text-align: left;
+    border-width: 0px 2px;
+    border-color: white;
+    border-radius: 5px;
+   
+}
+tbody tr td{
+    background-color: white;
+}
+table tr td{
+    letter-spacing: 0.5px;
+    padding: 8px;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 0.8px solid rgb(208, 199, 199);
+}
+
+
+.fa-solid
+{
+    float: right;
+    padding-top: 6px;
+}
+
+.actionbtn button
+{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.update, .delete{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.update{
+    background-color: rgb(295, 191, 0);
+    color: rgb(86, 84, 84);
+}
+.delete{
+    background-color: rgb(219, 12, 105);
+    color: bisque;
+}
+
+/* .pag{
+    position: sticky;
+    bottom: 0px;
+}  */
+
+ .btnbox
+ {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+ }
+ .btnbox:hover{
+    background-color: #ddd;
+    border-radius: 5px;
+ }
+
+.active{
+    background-color: rgb(219, 12, 105);;
+}
+
+.pageno{
+    color: black;
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+ @media only screen and (max-width:992px)
+{
+    
+     thead {
+        display: none;
+    }
+    .table,tbody,tr,td
+    {
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    tbody tr td
+    {
+        text-align: right;
+        padding-left: 30%;
+        position: relative;
+    }
+    td:last-child{
+        border-bottom:3px dotted black!important;
+    }
+    td::before
+    {
+        content: attr(data-label);
+        position: absolute;
+        left: 0px;
+        width: 50%;;
+        padding-left: 15px;
+        font-weight: 600;
+        text-align: left;
+    } 
+   
+} 
+
+

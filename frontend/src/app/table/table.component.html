@@ -1,0 +1,42 @@
+<div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th (click)="sort('id')">  id <i class="fa-solid fa-sort"></i></th>
+                <th (click)="sort('first_name')">  First Name <i class="fa-solid fa-sort"></i></th>
+                <th (click)="sort('last_name')">  Last Name <i class="fa-solid fa-sort"></i></th>
+                <th (click)="sort('age')">Age  <i class="fa-solid fa-sort"></i></th>
+                <th (click)="sort('email')">Email  <i class="fa-solid fa-sort"></i></th>
+                <th (click)="sort('phone_no')">Phone No  <i class="fa-solid fa-sort"></i></th>
+                <th (click)="sort('location')">Location  <i class="fa-solid fa-sort"></i></th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of sevenUserData">
+               <td data-label="id">{{ user.id }}</td>
+               <td data-label="First Name">{{ user.first_name }}</td>
+               <td data-label="Last Name">{{ user.last_name }}</td>
+               <td data-label="Age">{{ user.age }}</td>
+               <td data-label="Email">{{ user.email }}</td>
+               <td data-label="Phone No">{{ user.phone_no }}</td>
+               <td data-label="Location">{{ user.location }}</td>
+               <td data-label="Action">
+                <div class="actionbtn">
+                  <button (click)="updateData(user)" class="update">update</button>
+                  <button (click)="deleteData(user.id)" class="delete">delete</button>
+                </div>
+               </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pag">
+            <span class="btnbox" (click)="goToPrevious()" >&laquo;</span>
+            <span id="currspan{{pageno}}" class="btnbox" *ngFor="let pageno of pages" (click)="goToPage(pageno)">{{pageno}}</span>
+            <span class="btnbox" (click)="goToNext()">&raquo;</span>
+            <span class="pageno">Page No: {{currentPage}}</span>
+          </div>
+</div>
+
+    
+

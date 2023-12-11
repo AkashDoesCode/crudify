@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="formtitle"><h3>{{title}} User Data</h3></div>
+    <form autocomplete="on" [formGroup]="userData" id="ngform" (ngSubmit)="sendData()" >
+        <div class="row">
+            <div class="col-md">
+                <label for="fname">First Name :</label>
+                <input type="text" class="form-control" placeholder="Enter First Name" formControlName="first_name">
+                <small *ngIf="first_name && first_name.invalid && first_name.touched"><i class="fa-solid fa-triangle-exclamation"></i> Please provide a first name </small><br>
+
+              </div>
+            <div class="col-md" >
+                <label for="lname">Last Name :</label>
+                <input type="text" class="form-control"  placeholder="Enter Last Name" formControlName="last_name">
+                <small *ngIf="last_name && last_name.invalid && last_name.touched"><i class="fa-solid fa-triangle-exclamation"></i> Please provide a last name </small><br>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md">
+                <label for="age">Age :</label>
+                <input type="number" class="form-control" placeholder="Enter age" formControlName="age">
+                <small *ngIf="age && age.invalid && age.touched"><i class="fa-solid fa-triangle-exclamation"></i> Please provide an age</small><br>
+              </div>
+            <div class="col-md" >
+                <label for="email">Email address :</label>
+                <input type="email" class="form-control"  placeholder="Enter email" formControlName="email">
+                <small *ngIf="email && email.invalid && email.touched"><i class="fa-solid fa-triangle-exclamation"></i> Please provide a properly formatted email </small><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                <label for="phoneNo">Phone No :</label>
+                <input type="number" class="form-control" placeholder="Enter Phone No" formControlName="phone_no">
+                <small *ngIf="phone_no && phone_no.invalid && phone_no.touched"><i class="fa-solid fa-triangle-exclamation"></i> Phone no should not exceed 15 character </small><br>
+              </div>
+            <div class="col-md" >
+                <label for="location">Location :</label>
+                <textarea class="form-control"  rows="1" placeholder="Enter Location" formControlName="location"></textarea>
+                <small *ngIf="location && location.invalid && location.touched"><i class="fa-solid fa-triangle-exclamation"></i> Please provide a location</small><br>
+            </div>
+        </div>
+    </form>
+    <div  class="mybtn"><button [disabled]="userData.invalid" form="ngform">{{formMode}}</button></div>
+</div>
+
+
+
