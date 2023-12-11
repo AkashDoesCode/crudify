@@ -5,7 +5,6 @@ CRUDify is a simple and intuitive web application that allows users to perform C
 **Features**
 
 Create: Easily add new records to your dataset.
-
 Read: View and search through existing records effortlessly.
 
 Update: Modify and update records with a user-friendly interface.
